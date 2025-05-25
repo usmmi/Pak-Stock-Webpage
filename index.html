@@ -4,25 +4,155 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+   .change-button {
+    margin-top: 5px;
+    border-radius: 20px;
+    border: white;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    height: 20px;
+    transition: color 0.3 ease, border 0.3s ease, background-color 0.3 ease;
+    
+   }
+
+   .change-button:hover {
+    background-color: #5ab946;
+    color:white;
+    border-color: #5ab946;
+
+   }
+
+   .border-changes {
+    border-radius: 5px;
+    background-color: #5ab946;
+    height:30px;
+    margin-right: 5px;
+    border: white;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   }
+
+   .border-changes:hover {
+    background-color: #489534;
+   }
+
+   .split-button{
+    margin-left: 10px;
+    display: flex;
+    width: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 35px;
+
+   }
+   .split-button button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+     background-color: white;
+   }
+
+   /* .split-button.left:hover {
+    background-color:#489534;
+   } */
+
+    .split-button .left {
+    background-color: #5ab946 ;
+   } 
+   .right:hover{
+    background-color: #e8e8e8;
+   }
+   /* .front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .back {
+    background-color:white;
+    z-index: 1;
+  }
+
+  .front {
+    background-color: #e8e8e8;
+    z-index: 2;
+    transition: transform 0.5s ease;
+    /* position: relative; */
+  /* }
+
+  .arrow{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 45px;
+    font-size: 40px;
+    transition: tranform 0.3s ease ;
+    color: #555555;
+  }
+  .container:hover .front {
+    transform: translateY(-100%);
+  } 
+  .container:hover .arrow{
+    transform: rotate(90deg);
+  } 
+    */ 
+  </style>
 </head>
-<body>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  
-  <div style="margin-bottom: 10px; background-color: #5ab946; width: 100%; height: 350px; background-image: url(https://www.psx.com.pk/psx/themes/psx/uploads/sliders/PSX-ESG.jpg);">
+<body style="margin: 0 0;">
+  <nav style="width: 100%; height: 120px; background-color: #555555; position: relative; position: fixed;">
+    <div style="position: absolute; width: 150px; height: 150px; background-color: #5ab946; margin-left: 50px; border-radius: 5px; box-shadow:0px 0px 15px 1px grey; ">
+     <img src="https://www.psx.com.pk/psx/themes/psx/images/logo-animated-75y.gif" style="width: 100%; height: 100%; border-radius: 5px;">
+    </div>
+    <div style="width: 100%; height: 70px; background-color: white; display: flex;">
+    <uL style="margin-left: 250px; display: flex; list-style: none; " >
+        <li><a href="httops"><button class="border-changes">Market Smmary</button></a></li>
+        <li><a href="httops"><button class="border-changes">PSK Knowledge Center</button></a></li>
+        <li><a href="httops"><button class="border-changes"> PSK Data Portal</button></a></li>
+        <li><a href="httops"><button class="change-button" >Careers</button></a></li>
+        <li><a href="httops"><button class="change-button" style="width: 120px;">Daily Download</button></a></li>
+        <li><input type="search" placeholder="Search on Pakistan Stock Exchange" required style="border-radius: 20px; height: 30px; width: 220px; margin-left: 15PX; border-color: grey; border-style:solid ;"></li>
+        <li class="split-button"><button class="left">English</button>
+            <button class="right" >Urdu</button>
+        </li>
+      </uL>  
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div style="margin-bottom: 10px; background-color: #5ab946; width: 100%; height: 350px; background-image: url(https://www.psx.com.pk/psx/themes/psx/uploads/sliders/PSX-ESG.jpg); display: flex;">
+  <diV class="container" style="height: 200px; width: 200px; background-color: #e8e8e8; margin: 150px 0px 0px 220px; border-right: 1px solid gray;">
+  <!-- <div class="front"> -->
+    <!-- <spam class="arrow">&gt;</spam> -->
+  <!-- </div> -->
+  <!-- <div class="back"></div> -->
+  </diV>
+  <diV style="height: 200px; width: 200px; background-color: #e8e8e8;margin:150px 0px 0px 0px; border-right: 1px solid gray"></diV>
+  <diV style="height: 200px; width: 200px; background-color: #e8e8e8;margin:150px 0px 0px 0px; border-right: 1px solid gray"></diV>
+  <diV style="height: 200px; width: 200px; background-color: #e8e8e8;margin:150px 0px 0px 0px;"></diV>
   </div>
-<table align="center" style="background-color: gray; width: 100%;">
+<table align="center" style="background-color: #e8e8e8; width: 100%;">
   <tr>
     <td>
       <br/>
-  <div style="width: 400px;height: 480px; background-color: white;">    
+  <div style="width: 400px;height: 480px; background-color:white; margin-left: 15px;">    
   <table style="font-size: 20px; width: 350px; ; height: 100px;" >
     <tr>
-      <th bgcolor="#5ab946" style="color: white;">MARKET SUMMARY MAIN BOARD</th>
+      <th bgcolor="#5ab946" style="color: white; border-radius: 10px;">MARKET SUMMARY MAIN BOARD</th>
       <th>MARKET SUMMARY GEM BOARD</th>
     </tr>
     <tr style="height: 20px;"></tr>
@@ -97,7 +227,7 @@
    </td>
    <td>
   <div style="width: 420px ;height: 500px; background-color: white;">    
-    <h1 style="color: white; height: 50px; background-color:#5ab946; font-size: 30px; text-align: left;"><img src="./images/eaf847d1-c164-4be0-ac36-15daf1db2401.png" width="40px" height="45px" align="center"> MARKET ACTIVITY</h1>
+    <h1 style="color: white; height: 50px; background-color:#5ab946; font-size: 30px; text-align: left; border-radius: 10px;"><img src="https://www.psx.com.pk/psx/themes/psx/uploads/market-icon2.png" width="30px" height="18px" align="center" style="margin-left: 8px; margin-top: 4px;"><span style="margin-top: 20px; height: 100%;"> MARKET ACTIVITY </span></h1>
    <select name="index" style="width: 400px;">
         <option>KSE 100 Index</option>
         <option>KSE All Share Index</option>
@@ -260,7 +390,7 @@
   </div> -->
 <!-- </span> -->
  <div>
-  <table>
+  <table style="margin-left: 15px;">
     <tr>
        <td style="width: 100%;">
        <h1>Exchange Insights</h1>
@@ -271,9 +401,9 @@
       </tr>
   </table>
 </div>
-<table>
+<table style="margin-left: 15px;">
   <tr>
-    <td style=" background-color: gray;">
+    <td style=" background-color:#e8e8e8">
 <div style=" width: 210px;">
   <div>
     <img src="./images/Icon-07.png">
@@ -281,7 +411,7 @@
  <h1 style=" font-size: 20px; text-align: center;" >Public Comments on the Draft Prospectus of Image REIT</h1>
 </div>
 </td>
-<td style=" background-color: gray;">
+<td style=" background-color:#e8e8e8">
 <div style="width: 204px;">
   <div>
     <img style="vertical-align: top;" src="./images/Icon-06.png">
@@ -289,7 +419,7 @@
     <h1 style="font-size: 20px; text-align: center;" >Green Sukuk – Term Sheet </h1>
 </div>
 </td>
-<td style=" background-color: gray;">
+<td style=" background-color:#e8e8e8">
 <div style=" width: 204px;">
   <div>
     <img  src="./images/Icon-047.png">
@@ -297,7 +427,7 @@
  <h1 style= "font-size: 20px; text-align: center;" >Subscription for NETS International Communication Limited</h1>
 </div>
 </td>
-<td style=" background-color: gray;">
+<td style=" background-color:#e8e8e8">
 <div style=" width: 204px;">
   <div>
     <img src="./images/Icon-013.png">
@@ -305,7 +435,7 @@
      <h1 style="font-size: 20px; text-align: center;" >Proposal of PSX Federal Budget for FY 2025-26</h1> 
 </div>
 </td>
-<td style=" background-color: gray;">
+<td style=" background-color:#e8e8e8">
 <div style=" width: 204px;">
   <div>
     <img src="./images/publicomments_1.png">
@@ -313,7 +443,7 @@
     <h1 style="font-size: 20px; text-align: center;" >Public Comments and PSX Response Papers</h1>       
 </div>
 </td>
-<td style=" background-color: gray;">
+<td style=" background-color:#e8e8e8">
 <div style=" width: 204px;">
   <div>
     <img src="./images/Icon-03.png">
@@ -327,7 +457,7 @@
   <table>
     <tr>
        <td style="width: 100%;">
-       <h1>Event Gallery</h1>
+       <h1 style="margin-left: 15px;">Event Gallery</h1>
        </td>
       <td>
       <input type="button" name="Exchange Insights" value="View All" style="height: 30px;">
@@ -335,28 +465,23 @@
       </tr>
   </table>
   </div>
-  <div>
+  <div style="margin-left: 15px;">
     <img src="./images/PFLW-collage-17-04-2025.png" style="width: 412px;">
     <img src="./images/PSX-Collage-12-03-2025.png" style="width: 412px;">
     <img src="./images/psx-ministry-of-finance-hosts-briefing-on-sovereign-domestic-green-sukuk-picture-collage-23-04-2025-2.png" style="width: 412px;">
-    </div >
-    <Div style="width: 100%; height: 550px; background-color: rgb(128, 128, 128); margin-top: 90px;">
-      <table>
-        <tr>
-          <td>
-    <Div style="width:200px ; height: 520px;">
-            <h1 style="color: #5ab946; font-size: 25px; margin-left: 40px;margin-top: 25px;">Most Popular</h1>
+    </div >  
+   <div style="background-color: #434343; width: 100%;height: 550px; display: flex; margin-top: 60px;">
+    <Div style="width:250px ; height: 550px;">
+              <h1 style="color: #5ab946;font-size: 25px; margin-left: 40px; margin-top: 25px;">Most Popular</h1>
             <ul style="color: white; list-style:none;">
               <li>Guide to Investers</li>
               <li>Event Gallery</li>
               <li>Trading Hours</li>
             </ul>       
-  <img src="./images/psx-logo-75-years-260x260-03.png" style="margin-top: 60px; width: 180px;">
-</Div>
-</td>
-    <td>
-   <div style="width: 350px; height: 515px;">
-    <h1 style="color: #5ab946; font-size: 25px; margin-left: 40px;">Other PSX Websites</h1>
+            <img src="./images/psx-logo-75-years-260x260-03.png" style="margin-top: 60px; width: 220px;">
+    </Div>
+   <Div style="width:370px ; height: 550px;"> 
+        <h1 style="color: #5ab946; font-size: 25px; margin-left: 40px; margin-top: 25px;">Other PSX Websites</h1>
             <ul style="color: white; list-style:none; margin-bottom: 0px;">
               <li>Data POrtals</li>
               <li>PUCARS</li>
@@ -364,41 +489,52 @@
             <br>
      <h1 style="color: #5ab946; font-size: 25px; margin-left: 40px; ">PSX Head Office</h1>
             <ul style="color: white; list-style:none;">
-              <li>Stock Exchange Building, Stock
-                  Exchange Road. Karachi - 7400 0   
+              <li>Stock Exchange Building, Stock<br>
+                  Exchange Road. Karachi - 74000 <br>   
                   Pakistan.
               </li>
-              <br>    
+              <br>
      <h1 style="color: #5ab946; font-size: 25px; margin-left: 0px;">Phones</h1>
             <p style="color: white; list-style:none;">
              +9221 111-001-122
             </p>
             <br>
      <h1 style="color: #5ab946; font-size: 25px; margin-left: 0px;">PSX Whistle Blowing Policy</h1>              
-   </div>
-  </td>
-   <td>
-    <div style="width: 300px; height: 520px;">
-    <h1 style="color: #5ab946; font-size: 40px; margin-bottom: 10px;" >Connect <br>With Us</h1>
+   </Div> 
+    <Div style="width:280px ; height: 550px;">
+    <h1 style="color: #5ab946; font-size: 40px; margin-bottom: 15px ; margin-top: 26px;" >Connect <br>With Us</h1>
     <img src="./images/fb.png">
     <img src="./images/Twitter-X-logo-01.png">
     <img src="./images/youtube.png">
     <img src="./images/Whatsapp.png">
     <img src="./images/linkedin.png">
     <img src="./images/service-new.png" style="margin-top: 25px;">
-    <img src="./images/footer_note_legal.png " style="margin-top: 20px;">
-  </div> 
-  </td>
-   <td>
-    <div style="width: 370px; height: 500px; background-color: aliceblue;"></div>
-   </td>
-
-
-
-
-
-</tr>
-      </table> 
-  </Div>
+    <img src="./images/footer_note_legal.png " style="margin-top: 20px;">  
+    </Div>
+     <Div style="width:360px ; height: 480px; background-color: #555555;">
+      <form style="margin-top: 0%;">      
+      <h1 style="color: #5ab946; margin-left: 25px; margin-top: 30px; font-size: 26px;">Get In Touch</h1>
+        <div class="footer" >
+            <input type="text" name="footer" placeholder="Name" required style="width: 300px; height: 36px; border-radius: 6px; margin-bottom: 20px;margin-left: 25px; padding-left: 10px;">
+            <input type="email" name="footer" placeholder="Email" required style="width: 300px; height: 36px; border-radius: 6px; margin-bottom: 20px;margin-left: 25px; padding-left: 10px;">
+            <input type="text" name="footer" placeholder="Contact" required style="width: 300px; height: 36px; border-radius: 6px; margin-bottom: 20px;margin-left: 25px; padding-left: 10px;">
+          <select name="footer" required style="width: 305px; height: 36px; border-radius: 6px; margin-bottom: 20px;margin-left: 25px; padding-left: 10px;">
+           <option value="0">Select query</option>
+           <option value="1">How to invest?</option>
+           <option value="2">How to open an account?</option>
+           <option value="3">How to open a Sahulat account?</option>
+           <option value="4">How to open an Online Account?</option>
+           <option value="5">Being an overseas Pakistani, how do you invest through REI?</option>
+           <option value="6">How to select a securities broker?</option>
+           <option value="7">PSX Market Data request</option>
+           <option value="8">Feedback</option>
+           <option value="9">Complaint </option>
+          </select>
+          <textarea rows="2" id="footer" name="footer" placeholder="Please write your feedback here" required style="width: 300px; height: 80px; margin-bottom: 20px;margin-left: 25px; padding: 10px 0px 0px 10px; border-radius: 10px;"></textarea>
+          <button style="width: 305px; height: 36px; border-radius: 6px; margin-left: 25px; background-color: #5ab946 ; color: white;">Submit</button> 
+        </div> 
+    </form> 
+     </Div>
+  </div>
   </body>
 </html>
